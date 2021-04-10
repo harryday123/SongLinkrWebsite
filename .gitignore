@@ -6,3 +6,4 @@
 *.scss.map
 
 .stylelintrc
+.atom-live-server.json

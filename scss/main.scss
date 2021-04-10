@@ -1,7 +1,31 @@
 // Imports
 @use 'colors';
+@use 'flexbox';
 
 // Use Default System Font
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  margin: auto;
+}
+
+header {
+  @include flexbox.flexbox;
+  @include flexbox.flex-direction();
+  @include flexbox.align-items(center);
+  @include flexbox.justify-content(center);
+  padding: 0 20px;
+}
+
+p {
+  line-height: 1.5
+}
+
+.header-icon {
+  width: 100px;
+  display: block;
+}
+
+.header-text {
+  padding-left: 20px;
 }
