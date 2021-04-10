@@ -5,10 +5,31 @@
   transition: all 0.5s ease;
 }
 
+::-moz-selection {
+  color: #fff;
+  background: #FF9400;
+}
+
+::selection {
+  color: #fff;
+  background: #FF9400;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   margin: auto;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.8rem;
+  }
 }
 
 header {
@@ -37,39 +58,95 @@ header {
   padding: 0 20px;
   margin-top: 40px;
 }
-
-h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.2em;
-}
-
-.header-info {
-  margin: 0;
-  padding-left: 20px;
-}
-
-.header-info p {
-  color: #7F7F82;
-  font-size: 1.125rem;
-}
-
-.header-icon {
+header .header-icon {
   display: block;
   width: 100px;
   height: 100px;
 }
-
-.header-icon img {
+header .header-icon img {
   width: 100%;
   height: 100%;
 }
-
-.hero-image {
-  max-width: 300px;
+@media (min-width: 768px) {
+  header .header-icon {
+    width: 200px;
+    height: 200px;
+  }
+}
+header .header-info {
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  header .header-info {
+    padding-left: 50px;
+  }
+}
+header .header-info p {
+  color: #7F7F82;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  header .header-info p {
+    font-size: 1.125rem;
+  }
 }
 
-.hero-image img {
+.hero-image-and-badge {
+  margin-top: 40px;
+}
+.hero-image-and-badge .hero-image {
+  max-width: 300px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero-image-and-badge .hero-image {
+    max-width: 500px;
+  }
+}
+.hero-image-and-badge .hero-image img {
   width: 100%;
+}
+
+.download-badge {
+  text-align: center;
+}
+.download-badge img {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .download-badge img {
+    width: 250px;
+  }
+}
+
+footer {
+  margin: 50px, 0;
+  text-align: center;
+  clear: both;
+}
+footer a {
+  color: #A9A9A9;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  footer a {
+    display: block;
+    line-height: 2;
+  }
+}
+@media (min-width: 576px) {
+  footer a:not(:last-of-type) {
+    margin-right: 6%;
+  }
+}
+footer h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=main.css.map */
