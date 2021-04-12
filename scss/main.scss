@@ -21,7 +21,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   margin: auto;
-  // text-decoration: none colors.$songlinkrOrange;
+
 }
 
 // Title Size
@@ -43,11 +43,6 @@ h2 {
 
 h3 {
   text-align: center;
-  a {
-    text-decoration: none;
-    color: colors.$songlinkrOrange;
-    &:hover { text-decoration: underline; }
-  }
 }
 
 h4 {
@@ -58,7 +53,14 @@ h4 {
 p {
   font-size: 1rem;
   line-height: 1.5;
+  // text-align: justify;
   @include mediaQuery.media-breakpoint-up(md) { font-size: 1.125rem }
+}
+
+a {
+  text-decoration: none;
+  color: colors.$songlinkrOrange;
+  &:hover { text-decoration: underline; }
 }
 
 
@@ -172,7 +174,7 @@ header {
 
   &:nth-child(odd) {
     @include mediaQuery.media-breakpoint-up(sm) {
-      .feature-info { padding-right: 40px }
+      .feature-info { padding-right: 40px; text-align: right; }
     }
   }
 }

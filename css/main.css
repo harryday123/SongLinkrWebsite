@@ -41,13 +41,6 @@ h2 {
 h3 {
   text-align: center;
 }
-h3 a {
-  text-decoration: none;
-  color: #FF9400;
-}
-h3 a:hover {
-  text-decoration: underline;
-}
 
 h4 {
   text-align: center;
@@ -62,6 +55,14 @@ p {
   p {
     font-size: 1.125rem;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #FF9400;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -229,6 +230,7 @@ header .header-info p {
 @media (min-width: 576px) {
   .feature:nth-child(odd) .feature-info {
     padding-right: 40px;
+    text-align: right;
   }
 }
 
