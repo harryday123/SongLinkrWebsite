@@ -21,6 +21,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   margin: auto;
+  // text-decoration: none colors.$songlinkrOrange;
 }
 
 // Title Size
@@ -34,7 +35,31 @@ h1 {
   }
 }
 
-// H2, H3, P
+h2 {
+  font-size: 2.18rem;
+  font-weight: 600;
+  margin: 40px 0 20px 0;
+}
+
+h3 {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: colors.$songlinkrOrange;
+    &:hover { text-decoration: underline; }
+  }
+}
+
+h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  @include mediaQuery.media-breakpoint-up(md) { font-size: 1.125rem }
+}
 
 
 header {
@@ -96,6 +121,81 @@ header {
   }
 }
 
+.wrapper {
+  // Cap width of content
+  max-width: 900px;
+  margin: auto;
+}
+
+.feature {
+  padding: 0 20px 40px;
+  // Space between each feature
+  @include mediaQuery.media-breakpoint-up(md) { margin: 200px 0; }
+
+  .feature-inner {
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    @include flexbox.flexbox;
+    min-height: 400px;
+    // Mobile Style (image under text)
+    @include mediaQuery.media-breakpoint-down(sm) {
+      @include flexbox.flex-direction(column)
+    }
+    .feature-img {
+      max-width: 300px;
+      margin: 20px auto;
+      @include flexbox.flex-grow;
+      @include flexbox.flex-basis(0);
+      img {
+        width: 100%;
+        @include mediaQuery.media-breakpoint-up(md) {
+          max-width: 300px;
+          position: absolute;
+          top: -23%;
+        }
+      }
+    }
+    .feature-info {
+      @include flexbox.flex-grow;
+      @include flexbox.flex-basis(0);
+      align-self: center;
+    }
+  }
+
+  &:nth-child(even) {
+    background: colors.$featureGrey;
+    @include mediaQuery.media-breakpoint-up(sm) {
+      .feature-info { order: 2; padding-left: 40px; }
+    }
+  }
+
+  &:nth-child(odd) {
+    @include mediaQuery.media-breakpoint-up(sm) {
+      .feature-info { padding-right: 40px }
+    }
+  }
+}
+
+
+.feature-grid {
+  @include flexbox.flexbox;
+  @include flexbox.flex-direction(row);
+  @include flexbox.flex-wrap(wrap);
+  @include flexbox.align-items(flex-start);
+  @include flexbox.justify-content(space-evenly);
+  @include flexbox.align-content(space-between);
+  margin-bottom: 50px;
+  @include mediaQuery.media-breakpoint-up(md) { margin: 100px auto; }
+
+  .feature-grid-item {
+    max-width: 250px;
+  }
+}
+
+.api-credit {
+  margin: 40px auto;
+}
 
 
 footer {

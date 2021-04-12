@@ -139,7 +139,7 @@
 
 // Axis Alignment
 // - applies to: flex containers
-// flex-start | flex-end | center | space-between | space-around
+// flex-start | flex-end | center | space-between | space-around | space-evenly
 @mixin justify-content($value: flex-start) {
   @if $value == flex-start {
     -webkit-box-pack: start;
@@ -151,10 +151,13 @@
        -ms-flex-pack: end;
   } @else if $value == space-between {
     -webkit-box-pack: justify;
-       -moz-box-pack: justify;
+        -moz-box-pack: justify;
        -ms-flex-pack: justify;
   } @else if $value == space-around {
        -ms-flex-pack: distribute;
+  } @else if $value == space-evenly {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
   } @else {
     -webkit-box-pack: $value;
        -moz-box-pack: $value;
