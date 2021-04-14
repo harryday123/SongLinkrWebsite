@@ -226,3 +226,14 @@ footer {
     line-height: 2;
   }
 }
+
+.support-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  p { max-width: 400px; background: #F4F3F9; padding: 40px; border-radius: 8px;
+		a { color: colors.$songlinkrOrange; &:hover { text-decoration: underline; } }
+	}
+}

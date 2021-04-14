@@ -307,4 +307,24 @@ footer h4 {
   line-height: 2;
 }
 
+.support-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.support-info p {
+  max-width: 400px;
+  background: #F4F3F9;
+  padding: 40px;
+  border-radius: 8px;
+}
+.support-info p a {
+  color: #FF9400;
+}
+.support-info p a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=main.css.map */
