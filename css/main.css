@@ -141,6 +141,7 @@ header .header-info p {
 }
 
 .download-badge {
+  margin-top: 40px;
   text-align: center;
 }
 .download-badge img {
@@ -262,7 +263,6 @@ header .header-info p {
   -webkit-align-content: space-between;
   -ms-flex-line-pack: space-between;
   align-content: space-between;
-  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .feature-grid {
