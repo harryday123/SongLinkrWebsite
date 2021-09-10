@@ -229,6 +229,12 @@ footer {
     font-size: 1rem;
     line-height: 2;
   }
+  h5 {
+    font-weight: bold;
+    font-variant-position: 0.75rem;
+    color: colors.$lightGrey;
+    line-height: 2;
+  }
 }
 
 .support-info {

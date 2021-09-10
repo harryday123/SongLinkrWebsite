@@ -309,6 +309,12 @@ footer h4 {
   font-size: 1rem;
   line-height: 2;
 }
+footer h5 {
+  font-weight: bold;
+  font-variant-position: 0.75rem;
+  color: #7F7F82;
+  line-height: 2;
+}
 
 .support-info {
   display: flex;
