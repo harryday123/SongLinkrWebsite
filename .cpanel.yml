@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export SLDEPLOYPATH=/home/harrqynk/songlinkr.harryday.xyz/
+    - /bin/cp -R * $SLDEPLOYPATH
