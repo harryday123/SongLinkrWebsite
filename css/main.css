@@ -35,7 +35,7 @@ h1 {
 h2 {
   font-size: 2.18rem;
   font-weight: 600;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 20px;
 }
 
 h3 {
@@ -296,7 +296,9 @@ footer a:hover {
 @media (max-width: 576px) {
   footer a {
     display: block;
-    line-height: 2;
+    line-height: 3;
+    min-width: 48px;
+    min-height: 48px;
   }
 }
 @media (min-width: 576px) {
@@ -310,7 +312,6 @@ footer h4 {
   line-height: 2;
 }
 footer h5 {
-  font-weight: bold;
   font-variant-position: 0.75rem;
   color: #7F7F82;
   line-height: 2;
